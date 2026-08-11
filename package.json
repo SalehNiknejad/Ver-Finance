@@ -1,0 +1,50 @@
+{
+  "name": "vertwo-finance",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint . --max-warnings 0",
+    "preview": "vite preview",
+    "typecheck": "tsc -b --pretty false",
+    "generate:pwa-assets": "pwa-assets-generator --preset minimal-2023 public/logo.svg"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^5.2.1",
+    "@supabase/supabase-js": "^2.55.0",
+    "@tailwindcss/vite": "^4.1.12",
+    "@vitejs/plugin-react": "^4.7.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "date-fns": "^4.1.0",
+    "idb": "^8.0.3",
+    "lucide-react": "^1.31.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-hook-form": "^7.62.0",
+    "react-is": "^19.2.8",
+    "react-router-dom": "^7.8.2",
+    "recharts": "^3.1.2",
+    "sonner": "^2.0.7",
+    "tailwind-merge": "^3.3.1",
+    "vite": "^7.1.3",
+    "vite-plugin-pwa": "^1.0.3",
+    "zod": "^4.1.5",
+    "zustand": "^5.0.8"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.34.0",
+    "@types/node": "^24.3.0",
+    "@types/react": "^19.1.10",
+    "@types/react-dom": "^19.1.7",
+    "@vite-pwa/assets-generator": "^1.0.0",
+    "eslint": "^9.34.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "globals": "^16.3.0",
+    "typescript": "~5.8.3",
+    "typescript-eslint": "^8.41.0"
+  }
+}
