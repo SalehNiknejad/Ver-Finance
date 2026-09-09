@@ -5,6 +5,7 @@ import { ProtectedRoute } from "./protected-route";
 import { useFinanceSync } from "@/hooks/use-finance-sync";
 import { LoadingState, SplashScreen } from "@/components/ui/status";
 import { useAuthStore } from "@/store/auth-store";
+import { LoginPage } from "@/pages/login-page";
 
 const DashboardPage = lazy(() =>
   import("@/pages/dashboard-page").then((module) => ({
@@ -17,11 +18,6 @@ const GoldPage = lazy(() =>
 const InstallmentsPage = lazy(() =>
   import("@/pages/installments-page").then((module) => ({
     default: module.InstallmentsPage,
-  })),
-);
-const LoginPage = lazy(() =>
-  import("@/pages/login-page").then((module) => ({
-    default: module.LoginPage,
   })),
 );
 const NotFoundPage = lazy(() =>
