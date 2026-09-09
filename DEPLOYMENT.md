@@ -59,15 +59,15 @@ Vercel supports multiple configuration methods:
 
 #### vercel.json Properties Used
 
-| Property | Value | Description |
-|----------|-------|-------------|
-| `buildCommand` | `npm run build` | Custom build command |
-| `devCommand` | `npm run dev` | Development server command |
-| `installCommand` | `npm install` | Package installation command |
-| `framework` | `vite` | Framework detection |
-| `outputDirectory` | `dist` | Build output location |
-| `rewrites` | SPA routing | Route all requests to index.html |
-| `headers` | Caching rules | Cache static assets (SVG, PNG, ICO) |
+| Property          | Value           | Description                         |
+| ----------------- | --------------- | ----------------------------------- |
+| `buildCommand`    | `npm run build` | Custom build command                |
+| `devCommand`      | `npm run dev`   | Development server command          |
+| `installCommand`  | `npm install`   | Package installation command        |
+| `framework`       | `vite`          | Framework detection                 |
+| `outputDirectory` | `dist`          | Build output location               |
+| `rewrites`        | SPA routing     | Route all requests to index.html    |
+| `headers`         | Caching rules   | Cache static assets (SVG, PNG, ICO) |
 
 ### Caching Strategy
 
@@ -115,6 +115,7 @@ Vercel supports multiple configuration methods:
 ### Environment Configuration
 
 See `.env.example` for required variables:
+
 ```
 VITE_SUPABASE_URL
 VITE_SUPABASE_ANON_KEY
@@ -123,6 +124,7 @@ VITE_SUPABASE_ANON_KEY
 ### Ignored Files
 
 `.vercelignore` prevents unnecessary files from being deployed:
+
 - node_modules
 - .git
 - .env.local
