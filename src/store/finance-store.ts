@@ -1,6 +1,5 @@
 import { create } from "zustand";
 import { toast } from "sonner";
-import { demoSnapshot } from "@/lib/demo-data";
 import { createId } from "@/lib/utils";
 import {
   cacheSnapshot,
@@ -120,7 +119,7 @@ export const useFinanceStore = create<FinanceState>((set, get) => {
         set({ ...cached, loading: false });
       }
       if (!isSupabaseConfigured) {
-        if (!cached) set({ ...demoSnapshot, loading: false });
+        if (!cached) set({ ...emptySnapshot, loading: false });
         persist();
         return;
       }
